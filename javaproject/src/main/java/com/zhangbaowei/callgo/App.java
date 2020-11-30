@@ -23,7 +23,7 @@ public class App {
         System.out.println("Default Charset in Use=" + getDefaultCharSet());
 
 
-        LibGoRedis.INSTANCE.CreateRedisClient("172.21.16.1:7000,172.21.16.1:7001,172.21.16.1:7002", "passwd123");
+        LibGoRedis.INSTANCE.CreateRedisClient("127.0.0.1:7000", "passwd123");
 
         CountDownLatch countDownLatch = new CountDownLatch(100);
 
